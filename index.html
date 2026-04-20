@@ -536,21 +536,21 @@
 
     /* ── Screen helpers ── */
     function showAuth() {
-      document.getElementById('authScreen').style.display    = '';
+      document.getElementById('authScreen').style.display    = 'block';
       document.getElementById('confirmScreen').style.display = 'none';
       document.getElementById('appScreen').style.display     = 'none';
     }
 
     function showConfirm() {
       document.getElementById('authScreen').style.display    = 'none';
-      document.getElementById('confirmScreen').style.display = '';
+      document.getElementById('confirmScreen').style.display = 'block';
       document.getElementById('appScreen').style.display     = 'none';
     }
 
     function showApp() {
       document.getElementById('authScreen').style.display    = 'none';
       document.getElementById('confirmScreen').style.display = 'none';
-      document.getElementById('appScreen').style.display     = '';
+      document.getElementById('appScreen').style.display     = 'block';
       document.getElementById('userEmail').textContent = session?.user?.email || '';
     }
 
